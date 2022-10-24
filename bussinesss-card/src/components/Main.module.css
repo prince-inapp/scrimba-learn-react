@@ -1,0 +1,19 @@
+.mainContainer{
+    margin: 10px;
+    padding: 50px 20px;
+}
+.mainTitleName{
+    color:white;
+}
+.mainDesignation{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;
+    text-align: center;
+    color: #F3BF99;
+}
+.mainContainer > h2{
+    color: #F5F5F5;
+}
