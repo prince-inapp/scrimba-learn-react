@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from '../assets/gallery.png'
+import Gallery from '../assets/images/gallery.png'
 
 export default function Hero(){
     return(

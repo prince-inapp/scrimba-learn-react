@@ -2,8 +2,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+section{
+    padding: 20px;
+}
 body{
     margin: 0;
+    font-family: 'Poppins';
 }
 nav{
     height: 70px;
@@ -29,7 +33,9 @@ section{
     display: flex;
     flex-direction: column;
 }
-
+.hero--header{
+    margin-bottom: 16px;
+}
 .hero--photo{
     max-width: 400px;
     align-self: center;
@@ -37,9 +43,28 @@ section{
 .hero--text{
     margin-top: 0;
 }
+.card--list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+
+}
 .card{
     width: 175px;
     font-size: 12px;
+    flex-shrink: 0;
+    position: relative;
+}
+.card--badge{
+    position: absolute;
+    z-index: 1;
+    border: #918E9B;
+    padding:5px 8px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight:bold ;
 }
 .card--image{
     width: 100%;
