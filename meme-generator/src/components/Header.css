@@ -1,0 +1,37 @@
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.header--title{
+    position: relative;
+    padding: 16px 10px 0px 10px;
+
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.7482px;
+    line-height: 1px;
+
+    color: #FFFFFF;
+
+}
+.header--logo{
+    margin-top: 10px ;
+    padding: 40px 0px 0px 10px;
+
+    align-self: center;
+}
+.header--description{
+    position: absolute;
+    right: 0px;
+    padding: 0px 10px;
+    color:white;
+    font-family: 'Karla';
+    font-weight: bold;
+
+}
