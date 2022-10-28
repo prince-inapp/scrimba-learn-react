@@ -1,0 +1,30 @@
+main{
+    padding: 26px;
+}
+.form--container{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+.form--input{
+    font-size: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid rgba(113, 31, 141, 1);
+    text-indent: 5px;
+
+
+}
+.form--btn{
+    grid-column: 1 / -1;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.image--container{
+    grid-column: 1 / -1;
+    align-self: center;
+    width: 100%;
+
+}
