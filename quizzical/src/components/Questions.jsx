@@ -19,7 +19,8 @@ const Questions = () => {
 
     if(!isPending){
             questions = allTriviaData.results.map((obj)=>{
-            return <Card key={nanoid()} data={obj} >
+                const id = nanoid();
+            return <Card key={id} data={obj} id={id}>
                     </Card>
         });
     }

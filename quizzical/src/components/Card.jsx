@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 
 const Card = (props) => {
     function shuffleArray(array) {
@@ -10,25 +11,29 @@ const Card = (props) => {
         }
         return array;
     }
-    const {correct_answer , incorrect_answers, question} = props.data
+    const { correct_answer, incorrect_answers, question } = props.data
     let options = [];
     options.push(correct_answer);
-    for(let i=0; i < incorrect_answers.length; i++){
+    for (let i = 0; i < incorrect_answers.length; i++) {
         options.push(incorrect_answers[i]);
     }
     options = shuffleArray(options);
-    const displayOptions = options.map((option)=>{
-        return (<div className='option'>
-            {option}
-        </div>);
+
+    const displayOptions = options.map((option, index, arr) => {
+        return (
+            <div className='option'>
+                <input className={`input--radio`} type='radio' value={option} name={`options-${props.id}`} />
+                <label htmlFor={`options-${props.id}`}>{option}</label>
+            </div>);
     })
-    return(
-    <div className="wrap">
-        <h4>{question}</h4>
-        <div className='options--container'>
-            {displayOptions}
+
+    return (
+        <div className="wrap">
+            <h4>{question}</h4>
+            <div className='options--container'>
+                {displayOptions}
+            </div>
         </div>
-    </div>
     )
 };
 
